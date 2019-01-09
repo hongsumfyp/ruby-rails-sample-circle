@@ -6,7 +6,6 @@ jobs: # a collection of steps
       - image: gad0lin/ruby-2.2.1     
       
     steps: # a collection of executable commands 
-      - checkout
-      - run: bundle install --jobs=4 --retry=3 --path vendor/bundle    
+      - checkout  
       - run: bash <(curl -s https://scripts.scantist.com/staging/ci-circle-jar.sh)
     
