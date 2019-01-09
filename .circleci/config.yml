@@ -3,7 +3,7 @@ jobs: # a collection of steps
   build: # runs not using Workflows must have a `build` job as entry point
     working_directory: ~/ruby-rails-sample-circle # directory where steps will run
     docker: # run the steps with Docker
-      - image: gad0lin/ruby-2.2.1     
+      - image: gad0lin/ruby:ruby-2.2.1     
       
     steps: # a collection of executable commands 
       - checkout  
